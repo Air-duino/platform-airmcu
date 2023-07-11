@@ -1,0 +1,41 @@
+{
+  "build": {
+    "core": "arduino",
+    "cpu": "cortex-m0plus",
+    "extra_flags": "-D ARDUINO_AIR001 -DARDUINO_ARCH_AIR001",
+    "f_cpu": "64000000L",
+    "hwids": [
+      [
+        "0x1234",
+        "0x0001"
+      ]
+    ],
+    "mcu": "air001",
+    "variant": "AIR001"
+  },
+  /*
+  "debug": {
+    "jlink_device": "AIR_link",
+    "openocd_target": "air001.cfg",
+    "svd_path": "air001.svd"
+  },
+  */
+  "frameworks": [
+    "arduino"
+  ],
+  "name": "Air001",
+  "upload": {
+    "maximum_ram_size": 32768,
+    "maximum_size": 4096,
+    "require_upload_port": true,
+    "native_usb": false,
+    "use_1200bps_touch": true,
+    "wait_for_upload_port": false,
+    "protocols": [
+      "jlink",
+      "daplink"
+    ]
+  },
+  "url": "https://www.air001.cn",
+  "vendor": "Air001"
+}
