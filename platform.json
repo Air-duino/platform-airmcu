@@ -1,0 +1,41 @@
+{
+    "name": "air001",
+    "title": "Air001_platfrom",
+    "description": "This is an attempt to adapt air001 to platfromio",
+    "homepage": "https://air001.cn",
+    "license": "Apache-2.0",
+    "keywords": [
+        "air001",
+        "AIR" ,
+        "luatos" ,
+        "airmcu"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/lily-Robot/air001_platfromIO.git"
+    },
+    "version": "0.0.1",
+    "frameworks": {
+      "arduino": {
+        "package": "framework-arduino-air001",
+        "script": "builder/frameworks/arduino.py"
+      }
+    },
+    "packages": {
+       "tool-airisp": {
+        "type": "uploader",
+        "optional": true,
+        "version": "https://github.com/Air-duino/AirISP.git"
+       },
+       "framework-arduino-airmcu": {
+        "type": "framework",
+        "optional": true,
+        "version": "https://github.com/Air-duino/Arduino-AirMCU.git"
+       },
+        "toolchain-air001": {
+        "type": "toolchain",     // 对不起，我没找到完整工具链
+        "owner": "null",   // 对不起，我没找到完整工具链
+        "version": "null" // 对不起，我没找到完整工具链
+        }
+    }
+  }
