@@ -23,9 +23,9 @@ AIRM2M MCU: development platform for PlatformIO
 
 要安装这个自定义开发板，您需要：
 
-- 在 PlatfromIO 的 core 目录下，或者在项目目录下（如果您想要每个项目使用不同的开发板），创建一个 `myplatform` 文件夹。
-- 从这个仓库中复制 `boards`，`builder` 和 `platform.json` 文件到 `myplatform` 文件夹中。
-- 通过 PlatfromIO IDE 或者 CLI 命令 `pio platform install myplatform` 来安装自定义平台。
+- 在 PlatfromIO 的 core 目录下，或者在项目目录下（如果您想要每个项目使用不同的开发板），创建一个 `air001` 文件夹。
+- 从这个仓库中复制 `boards`，`builder` 和 `platform.json` 文件到 `air001` 文件夹中。
+- 通过 PlatfromIO IDE 或者 CLI 命令 `pio platform install air001` 来安装自定义平台。
 - 在您的项目中选择 `Air001` 作为目标开发板。
 
 ## 使用
